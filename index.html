@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Giga Pet - DevTools Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Giga Pet</h1>
+      <p class="subtitle">
+        Project 2 pet app plus a Chrome DevTools Practice area for HW10.
+      </p>
+    </header>
+
+    <main>
+      <section class="pet-image-container">
+        <img
+          class="pet-image"
+          src="images/gigapet.png"
+          alt="French Bulldog puppy in a yellow hoodie, eyes closed, on a blue background"
+        />
+      </section>
+
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span></strong></div>
+        <p class="nap-info">
+          <strong>Nap:</strong> A short nap raises happiness a little and adds a little
+          weight because your pet is resting.
+        </p>
+        <p id="pet-note" class="pet-note" aria-live="polite"></p>
+
+        <div class="button-container">
+          <button type="button" class="treat-button">Treat</button>
+          <button type="button" class="play-button">Play</button>
+          <button type="button" class="exercise-button">Exercise</button>
+          <button type="button" class="nap-button">Nap</button>
+        </div>
+      </section>
+
+      <section class="devtools-section" aria-labelledby="devtools-heading">
+        <h2 id="devtools-heading">Chrome DevTools Practice</h2>
+        <p class="devtools-intro">
+          Open Chrome DevTools (<kbd>F12</kbd> or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd>).
+          Use the Console and Sources tabs with the buttons below. Follow the comments in
+          <code>script.js</code> for breakpoints and screenshot ideas.
+        </p>
+
+        <h3>Console: message logging</h3>
+        <div class="devtools-buttons">
+          <button type="button" id="message-log-button">Message Logging</button>
+          <button type="button" id="info-log-button">Log Info</button>
+          <button type="button" id="warning-log-button">Log Warning</button>
+          <button type="button" id="error-log-button">Log Error</button>
+          <button type="button" id="table-log-button">Log Table</button>
+          <button type="button" id="group-log-button">Log Group</button>
+          <button type="button" id="custom-log-button">Log Custom</button>
+        </div>
+
+        <h3>Console &amp; Network: browser and script issues</h3>
+        <div class="devtools-buttons">
+          <button type="button" id="browser-message-button">
+            View messages logged by the browser
+          </button>
+          <button type="button" id="network-404-button">Cause 404 network error</button>
+          <button type="button" id="type-error-button">Cause TypeError</button>
+          <button type="button" id="violation-button">Cause Violation</button>
+        </div>
+
+        <h3>Console: filtering</h3>
+        <p class="hint">
+          Use the filter box and level dropdown in the Console toolbar. Click the buttons
+          below to print sample messages, then practice filtering.
+        </p>
+        <div class="devtools-buttons">
+          <button type="button" id="filter-messages-button">Filter Messages</button>
+          <button type="button" id="filter-level-button">Filter by log level</button>
+          <button type="button" id="filter-text-button">Filter by text</button>
+          <button type="button" id="filter-regex-button">Filter by regular expression</button>
+          <button type="button" id="filter-source-button">Filter by message source</button>
+          <button type="button" id="filter-user-button">Filter by user messages</button>
+        </div>
+
+        <h3>Sources: debugging workflow</h3>
+        <p class="hint">
+          Open the <strong>Sources</strong> tab, select <code>script.js</code>, then use the
+          buttons below. Set breakpoints on the lines described in the code comments.
+        </p>
+        <div class="devtools-buttons">
+          <button type="button" id="sources-ui-button">Get familiar with the Sources UI</button>
+          <button type="button" id="pause-breakpoint-button">Pause code with a breakpoint</button>
+          <button type="button" id="line-breakpoint-button">
+            Set a line-of-code breakpoint (see script.js)
+          </button>
+          <button type="button" id="check-variables-button">Check variable values</button>
+          <button type="button" id="scope-pane-button">Scope Pane</button>
+          <button type="button" id="watch-expressions-button">Watch Expressions</button>
+          <button type="button" id="console-while-paused-button">Console</button>
+          <button type="button" id="bug-button">Reproduce a bug</button>
+          <button type="button" id="fix-button">Apply a fix</button>
+        </div>
+        <p id="bug-result" class="bug-result" role="status">
+          Bug demo result will appear here after you click &ldquo;Reproduce a bug&rdquo; or
+          &ldquo;Apply a fix.&rdquo;
+        </p>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

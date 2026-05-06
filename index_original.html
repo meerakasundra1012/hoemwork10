@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Giga Pet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Giga Pet</h1>
+    </header>
+
+    <main>
+      <section class="pet-image-container">
+        <img
+          class="pet-image"
+          src="images/gigapet.jpg"
+          alt="My Giga Pet"
+        />
+      </section>
+
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span></strong></div>
+        <p class="nap-info">
+          <strong>Nap:</strong> A short nap raises happiness a little and adds a little
+          weight because your pet is resting.
+        </p>
+        <p id="pet-note" class="pet-note" aria-live="polite"></p>
+
+        <div class="button-container">
+          <button type="button" class="treat-button">Treat</button>
+          <button type="button" class="play-button">Play</button>
+          <button type="button" class="exercise-button">Exercise</button>
+          <button type="button" class="nap-button">Nap</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

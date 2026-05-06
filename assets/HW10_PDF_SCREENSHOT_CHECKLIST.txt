@@ -1,0 +1,57 @@
+HW10 — Chrome DevTools PDF checklist
+====================================
+Place your final PDF in this assets folder if your instructor allows it.
+Suggested filename: hw10-devtools-report.pdf
+
+How to use this project
+-----------------------
+1. Open index.html in Google Chrome (local file or a simple server).
+2. Open DevTools: F12 or Ctrl+Shift+J (Windows) / Cmd+Option+J (Mac).
+3. Work through the sections on the page; match each section to screenshots below.
+4. Read breakpoint and screenshot hints in script.js next to each function.
+
+Screenshots to capture for your PDF
+-----------------------------------
+
+Console — logging
+  A. Message Logging, Log Info, Log Warning, and Log Error (can be one composite or separate).
+  B. Log Table: show the table expanded in Console.
+  C. Log Group: show the group expanded with nested lines.
+  D. Log Custom: show the %c styled (purple) message.
+
+Browser and network
+  E. “View messages logged by the browser”: show a browser/network failure (failed image) in Console or Network.
+  F. Cause 404 network error: Network tab or Console showing failed fetch to assets/file-that-does-not-exist.json.
+  G. Cause TypeError: Console showing the uncaught TypeError and file/line.
+  H. Cause Violation: Console showing a [Violation] or long-task style warning (if visible in your Chrome version).
+
+Console — filtering
+  I. Filter Messages: Console with FILTER_DEMO lines, then the same view with a filter applied.
+  J. Filter by log level: show filtering to one level (e.g. only Errors or only Warnings).
+  K. Filter by text: filter box containing FILTER_TEXT_PET.
+  L. Filter by regular expression: regex matching pet-100 / pet-200 (e.g. pet-\d+).
+  M. Filter by message source: sidebar or filter limiting to script.js (UI varies by Chrome version).
+  N. Filter by user messages: Console showing mostly your script’s logs vs. browser noise.
+
+Sources — debugging
+  O. Sources tab with script.js open (file tree + editor) — “Get familiar with the Sources UI”.
+  P. Pause code with a breakpoint: execution paused on the debugger line (yellow highlight).
+  Q. Set a line-of-code breakpoint: blue breakpoint dot in the gutter on lineOfCodeBreakpointPractice.
+  R. Check variable values: paused on computed = base * multiplier; hover or Scope shows values.
+  S. Scope Pane: Local variables visible for scopePanePractice (scopeX, scopeY, scopeTotal).
+  T. Watch Expressions: Watch pane with expressions like watchSum or watchA while paused.
+  U. Console while paused: Console evaluating an expression (e.g. secretCode + 5) while execution is paused.
+
+Bug fix flow
+  V. Reproduce a bug: wrong string concatenation result on the page or in Console.
+  W. Apply a fix: correct numeric addition result after using Number().
+
+Optional short paragraph for the PDF
+------------------------------------
+Example (edit in your own words):
+For HW10 I extended my Giga Pet page with a DevTools Practice section. I used the Console
+to compare log, info, warn, error, table, group, and custom %c output. I triggered a browser
+image failure and a fetch 404, reproduced a TypeError and a long-task violation warning,
+and practiced Console filters. In Sources I set line breakpoints, inspected Scope, used
+Watch expressions, ran expressions in the Console while paused, then stepped through a
+small string-versus-number bug and verified the fix.

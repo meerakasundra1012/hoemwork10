@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+main {
+  display: block;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.pet-image {
+  height: 250px;
+}
+
+.pet-image-container {
+  float: left;
+  padding: 10px;
+}
+
+.dashboard {
+  float: left;
+  padding: 20px;
+}
+
+.dashboard div {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.nap-info {
+  max-width: 420px;
+  margin: 12px 0 8px;
+  line-height: 1.4;
+}
+
+.pet-note {
+  min-height: 1.2em;
+  margin: 8px 0 12px;
+  font-weight: bold;
+  color: #333;
+  opacity: 0;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.button-container button {
+  width: 100px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  padding: 6px 0;
+  font-size: 15px;
+  cursor: pointer;
+}

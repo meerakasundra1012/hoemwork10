@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 25px;
+  line-height: 1.45;
+  color: #222;
+  background: #f9f9f9;
+}
+
+main {
+  display: block;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-weight: 700;
+  margin: 0 0 6px;
+  font-size: 1.75rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.pet-image {
+  height: 250px;
+  max-width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.pet-image-container {
+  float: left;
+  padding: 10px 16px 10px 0;
+}
+
+.dashboard {
+  float: left;
+  padding: 12px 12px 20px 8px;
+  min-width: 260px;
+}
+
+.dashboard div {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.nap-info {
+  max-width: 420px;
+  margin: 14px 0 10px;
+  font-size: 0.92rem;
+  color: #333;
+}
+
+.pet-note {
+  min-height: 1.3em;
+  margin: 10px 0 14px;
+  font-weight: 600;
+  color: #1a5f2a;
+  opacity: 0;
+}
+
+.button-container {
+  margin-top: 12px;
+}
+
+.button-container button {
+  width: 100px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  padding: 8px 0;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid #2d6a3e;
+  background: #e8f5e9;
+  border-radius: 4px;
+  color: #1b4332;
+}
+
+.button-container button:hover {
+  background: #c8e6c9;
+}
+
+.devtools-section {
+  clear: both;
+  padding: 28px 0 40px;
+  max-width: 920px;
+}
+
+.devtools-section h2 {
+  margin: 0 0 10px;
+  padding-top: 22px;
+  border-top: 2px solid #bbb;
+  font-size: 1.35rem;
+}
+
+.devtools-section h3 {
+  margin: 22px 0 10px;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.devtools-intro,
+.hint {
+  margin: 0 0 12px;
+  max-width: 800px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.hint {
+  margin-top: 4px;
+  padding: 10px 12px;
+  background: #fff;
+  border-left: 4px solid #1976d2;
+  border-radius: 0 4px 4px 0;
+}
+
+.devtools-intro code,
+.hint code {
+  font-size: 0.9em;
+  background: #eee;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+kbd {
+  font-family: inherit;
+  font-size: 0.85em;
+  padding: 2px 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.devtools-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.devtools-buttons button {
+  padding: 8px 12px;
+  border: 1px solid #444;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #222;
+}
+
+.devtools-buttons button:hover {
+  background: #e3f2fd;
+  border-color: #1976d2;
+}
+
+.bug-result {
+  min-height: 2.5em;
+  padding: 12px 14px;
+  border: 1px solid #bdbdbd;
+  background: #fff;
+  max-width: 640px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
